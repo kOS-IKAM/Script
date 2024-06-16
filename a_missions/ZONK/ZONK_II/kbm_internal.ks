@@ -17,9 +17,9 @@ wait 1.
 PRINT "Copying from mainframe to local".
 wait 1.
 
-//aggiornare qui il file di configurazione
+//----| aggiornare qui il file di configurazione    |-----
 
-COPYPATH("0:/a_missions/ZONK/ZONK_I/a_configs", "1:/os/a_configs").
+COPYPATH("0:/a_missions/ZONK/ZONK_II/a_configs", "1:/os/a_configs").
 COPYPATH("0:/os/ULP", "1:/os/ULP").
 
 PRINT "Switch to Local".

@@ -22,36 +22,45 @@ else if ship:name = "ZONK-I" {
     cd("0:/a_missions/ZONK/ZONK_I").
     run kbm_internal.
 }
-
 else if ship:name = "ZONK-II" {
-    mycd.
-    run zonk_ii_boot.
+    cd("0:/a_missions/ZONK/ZONK_II").
+    run kbm_internal.
 }
-
 else if ship:name = "ZONK-III" {
-    mycd.
-    run zonk_iii_boot.
+    cd("0:/a_missions/ZONK/ZONK_III").
+    run kbm_internal.
 }
-
 else if ship:name = "ZONK-IV" {
-    mycd.
-    run zonk_iv_boot.
+    cd("0:/a_missions/ZONK/ZONK_IV").
+    run kbm_internal.
 }
-
-else if ship:name = "MERCURY-I" {
-    mycd.
-    run mercury_i_boot.
+else if ship:name = "ZONK-V" {
+    cd("0:/a_missions/ZONK/ZONK_V").
+    run kbm_internal.
 }
-
-else if ship:name = "AGENA TARGETING VEHICLE" {
-    mycd.
-    run agena_boot.
+else if ship:name = "ZONK-VI" {
+    cd("0:/a_missions/ZONK/ZONK_VI").
+    run kbm_internal.
 }
-
+else if ship:name = "ZONK-VII" {
+    cd("0:/a_missions/ZONK/ZONK_VII").
+    run kbm_internal.
+}
+else if ship:name = "ZONK-VIII" {
+    cd("0:/a_missions/ZONK/ZONK_VIII").
+    run kbm_internal.
+}
+else if ship:name = "ZONK-IX" {
+    cd("0:/a_missions/ZONK/ZONK_IX").
+    run kbm_internal.
+}
+else if ship:name = "ZONK-X" {
+    cd("0:/a_missions/ZONK/ZONK_X").
+    run kbm_internal.
+}
 
 //END
 else { 
-print "final else".
+print "WARNING!".
+print "No entry present in DB".
 }
-
-print "end of bookchecker".

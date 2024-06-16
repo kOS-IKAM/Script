@@ -2,15 +2,12 @@
 
 clearscreen.
 
+// ---- LOAD LIBRARIES and CONFIGS  ------
+
 runpath("1:/os/a_configs/ulp_configs.ks").
 run autostage.
 autostage().
 config_file().
-
-
-// ---- INTERFACE: CHANGE HERE  ------
-
-
 
 // ---- PROGRAM ------
 
@@ -25,8 +22,10 @@ print "Author: IKAM - 2024".
 
 print "Phase 1 - Lift                       " at (0,10).
 
+set mysteer to heading(compass_degree,90).
+lock steering to up.
 lock steering to mysteer.
-set mysteer to heading(compass_degree,incl_degree_1).
+//set mysteer to heading(compass_degree,incl_degree_1).
 wait 0.1.
 wait until ship:altitude > lift_h. 
 
@@ -35,7 +34,6 @@ wait until ship:altitude > lift_h.
 print "Phase 2 - Gravity Turn #1          " at (0,10).
 
 
-set mysteer to heading(compass_degree,90).
 wait 0.1.
 wait until ship:altitude > lift_h.
 set mysteer to heading(compass_degree,incl_degree_2).

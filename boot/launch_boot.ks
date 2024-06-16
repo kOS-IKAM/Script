@@ -35,6 +35,7 @@ IF SHIP:STATUS = "PRELAUNCH" {
     PRINT "...".
     wait 2.
     cd().
+    cd(boot).
     cd(bootchecker).
     run a_bootchecker.
 

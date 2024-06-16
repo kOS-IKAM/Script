@@ -13,5 +13,4 @@ print " ".
 print "Author: IKAM - 2024".
 
 
-panels on.
-ag2 on.
+orbit_script().

@@ -12,7 +12,7 @@ print "Author: IKAM - 2024".
 WAIT 2.
 
 PRINT "Launch sequence has started".
-PRINT "All system has started".
+PRINT "All systems on board".
 
 
 AG103 ON.                       //SIREN AG103

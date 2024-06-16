@@ -10,6 +10,7 @@ set asc_pe_tgt to -400000.
 
 set obt_pe_tgt to 73000.
 
+// set if polar or equatorial orbit here ---
 set compass_degree to c_equatorial.
 
 //  Phase 1 - Lift
@@ -19,7 +20,7 @@ set incl_degree_1 to 90.
 
 //  Phase 2 - Gravity Turn #1
 
-set incl_degree_2 to 40.
+set incl_degree_2 to 46.
 
 //  Phase 3 - Gravity Turn #2
 
@@ -43,8 +44,4 @@ set incl_degree_burn to -2.
 // ------ AUTOSTAGE MODE ----
 
 set autostage_status to true.
-}
-declare function orbit_script{
-    ag2 on.
-    panels on.
 }
