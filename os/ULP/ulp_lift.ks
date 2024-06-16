@@ -22,11 +22,10 @@ print "Author: IKAM - 2024".
 
 print "Phase 1 - Lift                       " at (0,10).
 
-set mysteer to heading(compass_degree,90).
 lock steering to up.
 lock steering to mysteer.
-//set mysteer to heading(compass_degree,incl_degree_1).
 wait 0.1.
+
 wait until ship:altitude > lift_h. 
 
 //  Phase 2 - Gravity Turn #1
@@ -36,7 +35,7 @@ print "Phase 2 - Gravity Turn #1          " at (0,10).
 
 wait 0.1.
 wait until ship:altitude > lift_h.
-set mysteer to heading(compass_degree,incl_degree_2).
+lock mysteer to heading(compass_degree,incl_degree_2).
 wait until ship:apoapsis > asc_ap_tgt.
 
 //  Phase 3 - Gravity Turn #2
@@ -44,7 +43,7 @@ wait until ship:apoapsis > asc_ap_tgt.
 print "Phase 3 - Gravity Turn #2          " at (0,10).
 
 wait 0.01.
-set mysteer to heading(compass_degree,incl_degree_flat).
+lock mysteer to heading(compass_degree,incl_degree_flat).
 wait 0.01.
 wait until ship:periapsis > asc_pe_tgt.
 
@@ -61,7 +60,7 @@ wait until eta:apoapsis < rep_eta.
 print "Phase 5 - Repositioning             " at (0,10).
 
 lock throttle to 0.1.
-set mysteer to heading(compass_degree,incl_degree_burn).
+lock mysteer to heading(compass_degree,incl_degree_burn).
 wait until eta:apoapsis < ap_eta.
 
 //  Phase 7 - Engine Re-Ignite
