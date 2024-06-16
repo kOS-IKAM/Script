@@ -17,7 +17,7 @@ on agx101 { //numero 1 del tastierino
 
 
 on agx150 { //enter
-    set result to (counter_a + counter_b*10)
+    set result to (counter_a + counter_b*10).
     
     if result = 10 {
         run program.

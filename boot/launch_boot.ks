@@ -2,9 +2,9 @@ CLEARSCREEN.
 
 declare function bootprint {
     PRINT " ".
-    PRINT "-ER7500 KOS COMPUTER-".
+    PRINT "-Kerberos Boot-".
     PRINT " ".
-    PRINT "Intelligent Kerbal Automatic Machines".
+    PRINT "IKAM - 2024".
     PRINT "".
     PRINT " ".
     PRINT " ".
@@ -14,37 +14,25 @@ IF SHIP:STATUS = "PRELAUNCH" {
 
 
     bootprint.
-    PRINT "STATUS DETECTED: " + SHIP:STATUS.
     PRINT "LOAD BOOT SEQUENCE TO START: PRESS KEYCODE 9".
     WAIT UNTIL AG201.
-    PRINT "LOADING.".
-    WAIT 0.2.
+    WAIT 0.1.
     PRINT ".".
-    CLEARSCREEN.
+    WAIT 0.1.
     PRINT "..".
-    WAIT 0.5.
+    WAIT 0.1.
     PRINT "...".
-    WAIT 0.3.
-    PRINT "Kerbal Operating System (KOS) is active and running".
-    PRINT ".....".
-    WAIT 0.3.
-    PRINT ".......... ".
-    PRINT "Loading Dependencies from Kernel".
-    WAIT 0.4.
-    PRINT ".............".
-    WAIT 0.5.
-    PRINT ".................... ".
-    WAIT 1.
     PRINT "Switching to Mainframe Volume 0".
     WAIT 1.
     SWITCH TO 0.
     CLEARSCREEN.
     print "running bootchecker".
-    wait 0.3.
-    print "...".
-    wait 0.3.
-    print "......".
-    print "............".
+    WAIT 0.1.
+    PRINT ".".
+    WAIT 0.1.
+    PRINT "..".
+    WAIT 0.1.
+    PRINT "...".
     wait 2.
     cd().
     cd(bootchecker).

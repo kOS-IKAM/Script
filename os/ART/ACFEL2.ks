@@ -17,7 +17,7 @@ log ship:name to "name.csv".
 
 function pisa {
 
-  print("Altitude Parameters: ")
+  print("Altitude Parameters: ").
   print "ALT: " + ceiling(ship:altitude).
   print "AP: " + ceiling(apoapsis).
   print "PE: " + ceiling(periapsis).

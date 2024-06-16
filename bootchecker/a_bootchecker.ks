@@ -1,3 +1,12 @@
+clearscreen.
+print "Running main bootchecker".
+WAIT 0.1.
+PRINT ".".
+WAIT 0.1.
+PRINT "..".
+WAIT 0.1.
+PRINT "...".
+
 declare function mycd {
     cd().
     cd(bootchecker).
@@ -8,6 +17,12 @@ CLEARSCREEN.
 //START
 if ship:name = "start" {
     print "start of bootchecker".
+    WAIT 0.1.
+    PRINT ".".
+    WAIT 0.1.
+    PRINT "..".
+    WAIT 0.1.
+    PRINT "...".
 }
 
 

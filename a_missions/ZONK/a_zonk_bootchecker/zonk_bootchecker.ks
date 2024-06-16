@@ -1,3 +1,7 @@
+clearscreen.
+print "Running local bootchecker".
+wait 1.
+
 declare function mycd {
     cd().
     cd(a_missions).
@@ -16,7 +20,7 @@ if ship:name = "start" {
 
 else if ship:name = "ZONK-I" {
     cd("0:/a_missions/ZONK/ZONK_I").
-    run zonk_i_boot.
+    run kbm_internal.
 }
 
 else if ship:name = "ZONK-II" {
